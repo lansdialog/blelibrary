@@ -17,8 +17,6 @@
         android:supportsRtl="true"
         android:name=".MainApp"
         android:theme="@style/Theme.Ble_demo">
-        <activity android:name="com.ble.demo.activity.BiaoDingActivity"/>
-        <activity android:name="com.ble.demo.activity.SplashActivity"/>
         <activity android:name=".MainActivity" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

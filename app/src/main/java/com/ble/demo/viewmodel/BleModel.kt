@@ -1,25 +1,19 @@
 package com.ble.demo.viewmodel
 
-import android.bluetooth.BluetoothDevice
 import android.content.Intent
 import android.text.InputType
-import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.input.input
-import com.ble.mylibrary.interfaces.QModeCallback
 import com.ble.mylibrary.interfaces.WeightMode
 import com.ble.mylibrary.outdevice.LScaleHelper
 import com.ble.demo.MainApp
-import com.ble.demo.activity.BiaoDingActivity
 import com.ble.demo.utils.T
 import com.ble.demo.utils.T.showShortCenter
 import com.ble.mylibrary.interfaces.PowerLevel
 import com.ble.mylibrary.interfaces.SleepLevel
-import kotlin.math.log
 
 class BleModel : ViewModel() {
     var rssi = -1
@@ -192,13 +186,13 @@ class BleModel : ViewModel() {
     }
 
     fun  biaoding(view : View){
-     var device =   LScaleHelper.getInstance(MainApp.context).connectDevice
-        if (device != null){
-            view.context.startActivity(Intent(view.context,
-                BiaoDingActivity::class.java))
-        }else{
-            T.showLong("请先连接设备")
-        }
+//     var device =   LScaleHelper.getInstance(MainApp.context).connectDevice
+//        if (device != null){
+//            view.context.startActivity(Intent(view.context,
+//                BiaoDingActivity::class.java))
+//        }else{
+//            T.showLong("请先连接设备")
+//        }
     }
 
 
