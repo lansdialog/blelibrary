@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--android:clipChildren:是否限制子View在其范围内-->
+    <!--可以通过android:layout_gravity控制超出的部分如何显示。-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/vp2"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_contain"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:layout_height="54dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/ll1"
+            android:paddingTop="6dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="match_parent"
+                android:src="@mipmap/index2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:text="首页"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/red2"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/ll2"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="68dp">
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="match_parent"
+                android:src="@mipmap/de"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:text="测试"
+                android:layout_marginTop="6dp"
+                android:gravity="center|bottom"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:id="@+id/ll3"
+            android:layout_gravity="bottom"
+            android:paddingTop="6dp"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/iv3"
+                android:src="@mipmap/main"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="我的"
+                android:id="@+id/tv3"
+                android:layout_marginTop="6dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

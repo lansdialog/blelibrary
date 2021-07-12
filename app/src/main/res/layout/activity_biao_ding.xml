@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#D3D1D1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#000"
+        android:textColor="#FAA88D"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        tools:text="32.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="注意:\n   标定前请确保是空称状态"
+            android:layout_width="match_parent"
+            android:textColor="@color/red2"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:text="标定砝码值: "
+          android:layout_marginRight="20dp"
+          android:gravity="center"
+          android:layout_marginLeft="8dp"
+          android:textColor="@color/red"
+          android:layout_height="match_parent"/>
+      <RadioGroup
+          android:id="@+id/rg"
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content">
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:text="30kg"
+              android:id="@+id/rb_30"
+              android:layout_weight="1"
+              android:textColor="#00AEFF"
+              android:drawablePadding="10dp"
+              android:button="@null"
+              android:drawableLeft="@drawable/selector_checkbox"
+              android:buttonTintMode="screen"
+              android:layout_height="wrap_content"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:text="50kg"
+              android:id="@+id/rb_50"
+              android:button="@null"
+              android:drawableLeft="@drawable/selector_checkbox"
+              android:drawablePadding="10dp"
+              android:layout_weight="1"
+
+              android:textColor="#00AEFF"
+              android:buttonTintMode="screen"
+
+              android:layout_height="wrap_content"/>
+          <RadioButton
+              android:id="@+id/rb_60"
+              android:text="60kg"
+              android:buttonTintMode="screen"
+              android:drawablePadding="10dp"
+              android:layout_weight="1"
+
+              android:button="@null"
+              android:drawableLeft="@drawable/selector_checkbox"
+
+              android:textColor="#00AEFF"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </RadioGroup>
+  </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_rec"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <Button
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:id="@+id/bt_sure"
+            android:text="已放玛法"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:text="开始标定"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

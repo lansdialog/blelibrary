@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/myblelibrary-release.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b329cdea004f1ed90f6211b06c3263b2/myblelibrary-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b329cdea004f1ed90f6211b06c3263b2/myblelibrary-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b329cdea004f1ed90f6211b06c3263b2/myblelibrary-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

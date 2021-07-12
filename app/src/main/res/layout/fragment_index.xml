@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.ble.demo.view.BannerView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="6dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="3dp"
+            android:background="@color/red2"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="功能模块"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/red2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        app:spanCount="4"
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+          tools:listitem="@layout/item_rec_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

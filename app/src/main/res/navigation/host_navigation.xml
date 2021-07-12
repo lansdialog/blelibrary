@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/host_navigation"
+    app:startDestination="@id/indexFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        tools:layout="@layout/fragment_index"
+        android:name="com.ble.demo.fragment.IndexFragment"
+        android:label="IndexFragment" />
+    <fragment
+        android:id="@+id/BDFragment"
+        tools:layout="@layout/fragment_index"
+
+        android:name="com.ble.demo.fragment.BDFragment"
+        android:label="BDFragment" />
+    <fragment
+        android:id="@+id/mainragment"
+        tools:layout="@layout/fragment_index"
+        android:name="com.ble.demo.fragment.MineFragment"
+        android:label="Mainragment" />
+</navigation>

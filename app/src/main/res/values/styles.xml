@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="MyProgressDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MyToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <!--系统级页面切换动画-->
+    <!--当前在页面1,要跳转页面2-->
+    <style name="AnimaActivity" parent="@android:style/Animation.Activity">
+        <!--页面2的进入动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in</item>
+        <!--页面1的离开动画-->
+        <item name="android:activityOpenExitAnimation">@anim/anim_out</item>
+        <!--点击返回键时候,页面2返回动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/anim_previous_in</item>
+        <!--点击返回键时候,页面1退出动画-->
+        <item name="android:activityCloseExitAnimation">@anim/anim_previous_out</item>
+    </style>
+
+    <style name="style_black_gridle_bt">
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textColor">@color/black_bt_text</item>
+        <item name="android:background">@drawable/selector_style_black_bg</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+    </style>
+
+    <style name="style_black_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="popwin_anim_style"  >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+</resources>
